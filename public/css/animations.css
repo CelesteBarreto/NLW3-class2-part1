@@ -1,0 +1,36 @@
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*determina como será a animação da aba direita de orphanage*/
+
+@keyframes right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate-up {
+    animation-name: up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+}
+
+
+/*classe do aside posição e duração da animação da aba direita da tela orphanages*/
+
+.animate-right {
+    animation-name: right;
+    animation-duration: 300ms;
+}
